@@ -1,0 +1,19 @@
+<section class="show-place mx-auto mb-3">
+    <div class="title text-center">
+      <h1>{{placeTitle}}</h1>
+    </div>
+    <div class="card w-50 mx-auto">
+    <div class="img mx-auto mb-3">
+      <img class="img-fluid" src="../assets/images/uploads/{{imgPath}}">
+    </div>
+    <div class="desc mx-auto">
+      <p>Location: {{placeAddress}}</p>
+      <p>Description: {{desc}}</p>
+    </div>
+    <div class="go-to-place">
+      <button class="btn float-right" (click)="goToPage()">Go to page</button>
+    </div>
+    <div class="clear-fix"></div>
+  </div>
+</section>
+

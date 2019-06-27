@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    transition: all 1s;
+
+
+}
+.my-pagination /deep/ .ngx-pagination .current {
+    background: #4b568a;
+    border-radius: 50%;
+    margin-top:10px;
+  }
+.row{
+    position: relative;
+    .my-pagination{
+        position: absolute;
+        bottom: 0;
+    }
+    
+      .linkToPage{
+          text-decoration:underline!important;
+      }
+    .show{
+        padding-bottom: 50px;
+    }  
+}

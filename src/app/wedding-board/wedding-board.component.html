@@ -1,0 +1,33 @@
+<section class="weddings">
+  <div class="container">
+  <h1 class="text-center mt-3">Get The Best Place For Your Best Day</h1>
+  
+  <div class="row">
+   
+    <div class="col-md-4 border-bottom mt-2" *ngFor=" let wedding of weddings |paginate:{itemsPerPage:6, currentPage: p}; let i = index">
+      <div class="show mb-2">
+        <div class="info b-2">
+          <div class="img">
+            <img class="img-fluid w-100" src="../assets/images/uploads/{{wedding.imgPath}}">
+          </div>
+        </div>
+        <div class="text mt-3" (click)="showInfo(i)">
+          <h2 >{{wedding.placeName |slice:0:23}}</h2>
+          <p class="hide">{{wedding.placeDesc | slice:0:100}}...</p>
+          <div class="show-it">
+            <p>{{wedding.placeDesc}}</p>
+            <!--<a [routerLink]="['/show-place/',i]" (click)="goToPlaceDetails(i)">Check The Place</a> -->
+            <a [routerLink]="['/show-place/',i]" (click)="goToPlaceDetails('/show-place',i)">Check The Place</a> 
+          </div>
+          <span  class="mr-2 mb-2 float-right">{{ wedding.placeAdd}} </span>
+              <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <pagination-controls class="my-pagination" (pageChange)="p = $event"></pagination-controls> 
+
+
+</div>
+</section>

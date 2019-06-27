@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    transition: all 1s;
+}
+.weddings{
+    h1{
+        font-size:38px;
+        color:#4e4e4e;
+    }
+    .show{
+        padding:5px;
+        border: 1px solid #cecfd3;
+        border-radius: 10px;
+    }
+    .text{
+        cursor: pointer;
+    }
+    .show-it{
+        display: none;   
+        a{
+            color:rgb(87, 87, 87);
+            border: 1px solid rgba(153, 162, 226, 0.7);
+            padding: 10px;
+            border-radius: 10px;
+        } 
+    }
+    h2{
+        font-size:30px;
+        color:rgb(75, 75, 75);
+    }
+    p{
+        color:#3f3f3f;
+    }
+    span{
+        color:#3f3f3f;
+    }
+    img{
+        border-radius: 10px;
+        height:227px;
+    }
+    
+}
