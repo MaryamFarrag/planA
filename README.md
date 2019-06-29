@@ -1,5 +1,5 @@
-# PlanB
-
+# PlanA
+PlanA is a website that suggests places for differen purposes, all you have to do is to choose your purpose.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
 
 ## Development server
